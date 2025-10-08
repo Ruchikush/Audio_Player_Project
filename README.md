@@ -1,11 +1,11 @@
-# Submission
+## Submission
 
 GitHub Repo: https://github.com/Ruchikush/Audio_Player_Project
 
 ScreenShort / Video: Drive Link : https://drive.google.com/drive/folders/1hmWUfVG6NCac-4jUz8PfeWwfGhbUwJxC
 
 
-# Tech Stack
+## Tech Stack
 
 | Category | Library / Tool |
 |-----------|----------------|
@@ -19,9 +19,9 @@ ScreenShort / Video: Drive Link : https://drive.google.com/drive/folders/1hmWUfV
 
 ---
 
-# Architecture Overview
+## Architecture Overview
 
-#  State Management
+##  State Management
 - Global playback state is handled by Redux Toolkit.
 - The `playbackSlice` defines all actions:
   - `LOAD_TRACK`
@@ -29,7 +29,7 @@ ScreenShort / Video: Drive Link : https://drive.google.com/drive/folders/1hmWUfV
   - `PAUSE`
   - `RESET` etc.
 
-# Audio Service
+## Audio Service
 All audio control logic lives in `AudioService.ts`.  
 This ensures a clean separation between UI and playback logic:
 - `AudioService.playTrack(trackUri)`
@@ -39,24 +39,24 @@ This ensures a clean separation between UI and playback logic:
 
 ---
 
-# How to Run Locally
+## How to Run Locally
 
-# 1. Clone the repo
+## 1. Clone the repo
 
 git clone https://github.com/Ruchikush/Audio_Player_Project.git
 cd my-audio-player
 
-# Install dependencies
+## Install dependencies
 
 npm install /yarn install
 
 
-# Start the Expo development server
+## Start the Expo development server
 npx expo start
 
 
 
-# Features Implemented
+## Features Implemented
 
 1. List local audio files from assets/audio/
 
@@ -81,7 +81,7 @@ npx expo start
 11. Use of TypeScript
 
 
-# Features Omitted / Known Issues
+## Features Omitted / Known Issues
 1. Background playback (notifications, lock screen) not implemented
 
 2. Real-time audio waveform visualization (used simple progress bar instead)
@@ -89,7 +89,7 @@ npx expo start
 3.  Playlist shuffle / repeat
 
 
-# Notes on Core Architecture
+## Notes on Core Architecture
 
 1. Redux Toolkit stores playback state (currentTrack, isPlaying, position, duration)
 

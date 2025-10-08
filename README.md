@@ -42,7 +42,7 @@ This ensures a clean separation between UI and playback logic:
 # How to Run Locally
 
 # 1. Clone the repo
-```bash
+
 git clone https://github.com/Ruchikush/Audio_Player_Project.git
 cd my-audio-player
 
